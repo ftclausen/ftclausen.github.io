@@ -1,4 +1,1 @@
-What is this?
--------------
-
-My resume will appear here
+Please find my resume at [/Resume](http://ftclausen.github.io/Resume/).

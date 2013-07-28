@@ -3,7 +3,7 @@
 
 * Traditional
     * <ftclausen@gmail.com>
-    * +31 638624328
+    * +31638624328
 * Online Identities
     * [LinkedIn](http://nl.linkedin.com/in/friedrichclausen)
     * [ServerFault](http://serverfault.com/users/127243/fred-clausen)

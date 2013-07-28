@@ -237,5 +237,5 @@ also supported the employee workstations.
 Location: Guildford, UK
 
 I provided first line technical support for Red Hat Linux
-which entailed helping customers install and use the product.
+which entailed helping customers install and use the product
 

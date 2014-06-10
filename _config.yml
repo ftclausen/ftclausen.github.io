@@ -1,0 +1,5 @@
+name: Fred's Notes
+markdown: redcarpet
+pygments: true
+redcarpet:
+    extensions: [ "tables", "with_toc_data" ]

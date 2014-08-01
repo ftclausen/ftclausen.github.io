@@ -3,3 +3,7 @@ markdown: redcarpet
 pygments: true
 redcarpet:
     extensions: [ "tables", "with_toc_data" ]
+analytics :
+  provider : google
+  google : 
+      tracking_id : 'UA-42775813-1'

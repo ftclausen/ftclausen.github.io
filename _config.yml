@@ -1,6 +1,6 @@
 name: Fred's Notes
 markdown: redcarpet
-pygments: true
+highlighter: true
 redcarpet:
     extensions: [ "tables", "with_toc_data" ]
 analytics :

@@ -60,6 +60,8 @@ follows below
 Below is a complete example that worked for me - note the "ldap" on line one 
 and also the file name; in this case */etc/rundeck/jaas-ldap.conf*
 
+<figure>
+    <figcaption>File: /etc/rundeck/jaas-ldap.conf</figcaption>
 {% highlight html %}
 {% raw %}
 ldap {
@@ -88,6 +90,7 @@ ldap {
 };
 {% endraw %}
 {% endhighlight %}
+</figure>
 
 Then edit the **/etc/rundeck/profile** and modify the **RDECK_JVM** to use "-Djava.security.auth.login.config=/etc/rundeck/jaas-ldap.conf". See [authenticating users](http://rundeck.org/docs/administration/authenticating-users.html#ldap) 
 for a full example; see "Step 2 - Specify login module".

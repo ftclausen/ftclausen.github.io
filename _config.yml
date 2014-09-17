@@ -2,7 +2,7 @@ name: Fred's Notes
 markdown: redcarpet
 highlighter: true
 redcarpet:
-    extensions: [ "tables", "with_toc_data" ]
+    extensions: [ "tables", "with_toc_data", "fenced_code_blocks" ]
 analytics :
   provider : google
   google : 

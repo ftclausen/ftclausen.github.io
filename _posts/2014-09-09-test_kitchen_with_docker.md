@@ -5,8 +5,6 @@ date: 2014-09-09 16:15
 categories: general
 ---
 
-# Intro
-
 Docker seems like it can be a great help to integration testing of Chef
 cookbooks; a good compliment to unit testing with Chefspec. I foresee a
 potential work-flow such as 

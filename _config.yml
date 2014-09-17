@@ -1,9 +1,58 @@
-name: Fred's Notes
-markdown: redcarpet
-highlighter: true
-redcarpet:
-    extensions: [ "tables", "with_toc_data", "fenced_code_blocks" ]
-analytics :
-  provider : google
-  google : 
-      tracking_id : 'UA-42775813-1'
+# Site wide configuration
+
+title:            Fred's Notes
+locale:           en_AU
+url:              
+
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+
+# Site owner
+owner:
+  name: Friedrich "Fred" Clausen
+  avatar: me_cropped.jpg
+  bio: "I am an applications & systems administrator and I particularly enjoy working at the intersection of 
+        development and operations; helping each team understand the needs of the other"
+  email: ftclausen@gmail.com 
+  disqus-shortname: 
+  twitter: #username
+  facebook: #username
+  google:
+    plus: #username
+    analytics: 
+    verify: 
+    ad-client: 
+    ad-slot: 
+  bing-verify: 
+  github: #ftclausen
+  stackoverflow: #http://stackoverflow.com/users/1300307/fred-clausen
+  serverfault: #http://serverfault.com/users/127243/fred-clausen
+  superuser: #http://superuser.com/users/164635/fred-clausen
+  linkedin: #friedrichclausen
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

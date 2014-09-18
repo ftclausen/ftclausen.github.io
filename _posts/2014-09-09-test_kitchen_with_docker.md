@@ -5,9 +5,9 @@ date: 2014-09-09 16:15
 categories: general
 ---
 
-Docker seems like it can be a great help to integration testing of Chef
-cookbooks; a good compliment to unit testing with Chefspec. I foresee a
-potential work-flow such as 
+While Docker is not meant to be a "faster VirtualBox" I think it can 
+be useful for improving the speed of test Chef cookbooks. It is a good 
+compliment to unit testing with Chefspec. Perhaps a work-flow I'll use is
 
 0. Develop cookbook changes
 1. Rubocop and Foodcritic checks

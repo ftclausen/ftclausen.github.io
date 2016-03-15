@@ -28,8 +28,7 @@ kramdown:
 owner:
   name: Friedrich "Fred" Clausen
   avatar: me_cropped.jpg
-  bio: "I am an applications & systems administrator and I particularly enjoy working at the intersection of 
-        development and operations; helping each team understand the needs of the other"
+  bio: "I am a build and infra automation developer working to become a better all-round developer"
   email: ftclausen@gmail.com 
   github: ftclausen
   stackoverflow: http://stackoverflow.com/users/1300307/fred-clausen

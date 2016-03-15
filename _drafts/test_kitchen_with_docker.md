@@ -64,7 +64,7 @@ your service resources work as expected, set the "run_command" in the
       driver_config:
         run_command: /sbin/init
   
-# Set up an SSH Key
+# Set up a SSH Key
 
 For this you can probably modify the Docker image but I decided to use a
 provisioning command just to make this always happen regardless of image type.
@@ -88,9 +88,27 @@ Then modify your Kitchen configuration to reference this by using the
     driver_config:
         provision_command: curl -sSL  http://10.111.111.1/setup_key.sh | bash -s
 
-This allows "kitchen login" to work without a password.
+This allows "kitchen login" to work without a password. Replace "10.111.111.1"
+with your workstation IP.
+
+# Docker Itself
+
+I am running on OS X and using [boot2docker](http://boot2docker.io/) so I need
+to specify the socket used to connect to the docker service. But how do we know
+what this is? Once you've installed boot2docker you can get this info by running
+the following command :
+
+    $ boot2docker ip
+
+we then take that host-only IP and put it in our .kitchen.yml in the
+"driver_config" section :
+
+    socket: tcp://192.168.69.103:2375
+
 
 # Example Configuration
+
+Below is a complete example using the information from above
 
     ---
     driver_plugin: docker
@@ -113,3 +131,5 @@ This allows "kitchen login" to work without a password.
         run_list:
           - recipe[ntp]
         attributes:
+
+# Sample Run

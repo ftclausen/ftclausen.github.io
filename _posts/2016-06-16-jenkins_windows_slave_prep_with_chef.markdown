@@ -10,16 +10,14 @@ uses SQL server so in order to expand our Windows CI efforts we need to add lots
 of Windows + SQL Server combo slaves.
 
 This article outlines how to provision a Windows node to maximise its readiness
-to act as a Jenkins slave. The Chef cookbook used is for **provisioning only**
-and is not meant to be run multiple times although it does not break anything if
-it does end up running again.
+to act as a Jenkins slave.
 
 What the Chef cookbook at the core of this HOWTO does is
 
 * **Install Git**
 * **Install the JDK**
 * **Install the JDK JCE extensions**
-* **Set the registry ownership**
+* **Set the registry ownership so that the master can install the slave remotely**
 * **Set a schedule task to stop the Jenkins service at boot**
 
 Why the last point? Because the master will manage the Jenkins slave process on the slave 

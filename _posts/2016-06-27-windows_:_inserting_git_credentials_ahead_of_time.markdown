@@ -5,7 +5,7 @@ date: 2016-06-27 14:06
 categories: general
 ---
 
-**Problem**: Git for Windows hangs when attempting to use the "`store`" credential
+**Problem**: Git for Windows hangs on Jenkins when attempting to use the "`store`" credential
 helper.
 
 **Solution**: Pre-populate the Windows Credential Manager with the required
@@ -92,7 +92,10 @@ been added
 #### Run as SYSTEM Account
 
 If you're running a service as Local SYSTEM then the above command will insert
-the credentials into the credentials store as whatever you run that command as.
+the credentials into the credentials store as whatever you run that command as
+*instead* of the SYSTEM account meaning the creds will not be available to the
+service. For example, a Jenkins slave agent might need some credentials for
+cloning Git repos.
 
 To work around that we can use the
 (PsExec.exe)[https://technet.microsoft.com/en-us/sysinternals/psexec.aspx]

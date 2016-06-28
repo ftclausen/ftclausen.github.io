@@ -5,7 +5,7 @@ date: 2016-06-27 14:06
 categories: general
 ---
 
-**Problem**: Git for Windows hangs when attempting to use the `store` credential
+**Problem**: Git for Windows hangs when attempting to use the "`store`" credential
 helper.
 
 **Solution**: Pre-populate the Windows Credential Manager with the required

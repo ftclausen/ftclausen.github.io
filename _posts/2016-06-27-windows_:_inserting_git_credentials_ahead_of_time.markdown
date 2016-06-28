@@ -79,6 +79,8 @@ GCM DLLs are unsigned and the script itself is unsigned. That is less than ideal
 and I've asked the GCM project if they can sign their DLLs and I'll look into
 signing the script itself.
 
+#### Run as Current User
+
 So the command line to actually execute the script is (replacing the path with
 where you chose to save the script)
 
@@ -86,6 +88,19 @@ where you chose to save the script)
 
 You can then open the Windows Credential Manager to check the credentials have
 been added
+
+#### Run as SYSTEM Account
+
+If you're running a service as Local SYSTEM then the above command will insert
+the credentials into the credentials store as whatever you run that command as.
+
+To work around that we can use the
+(PsExec.exe)[https://technet.microsoft.com/en-us/sysinternals/psexec.aspx]
+command in the following way to execute the above Powershell invocation
+
+    psexec.exe -i -s powershell -NoLogo -NonInteractive -NoProfile -ExecutionPolicy Bypass -InputFormat None -File c:\temp\insert_jenkins_credentials.ps1
+
+The above will insert the credentials for the SYSTEM account.
 
 ## References
 

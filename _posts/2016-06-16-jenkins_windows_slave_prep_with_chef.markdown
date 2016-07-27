@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Jenkins Slave on Windows Prep"
 date: 2016-06-16 15:06
 categories: general

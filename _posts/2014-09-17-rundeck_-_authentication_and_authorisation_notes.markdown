@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Rundeck - Authentication and Authorisation Notes"
 date: 2014-09-17 08:09
 categories: general

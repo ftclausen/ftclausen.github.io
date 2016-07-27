@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Windows : Inserting Git Credentials Ahead Of Time"
 date: 2016-06-27 14:06
 categories: general

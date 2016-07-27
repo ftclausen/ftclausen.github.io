@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Selenium Webdriver PageFactory Worked Example
 date: 2013-09-24 10:09
 categories: selenium

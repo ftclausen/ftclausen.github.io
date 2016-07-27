@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Switch Frames in Selenium"
 date: 2013-09-25 13:09
 categories: selenium

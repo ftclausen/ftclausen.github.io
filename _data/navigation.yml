@@ -1,7 +1,8 @@
 # Site navigation links
 
-- title: My Resume
-  url: /Resume/
+main:
+  - title: My Resume
+    url: /Resume/
 
-- title: Post Index
-  url: /
+  - title: Post Index
+    url: /

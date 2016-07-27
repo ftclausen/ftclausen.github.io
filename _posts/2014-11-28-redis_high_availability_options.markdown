@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Redis High Availability Options"
 date: 2014-11-28 09:11
 categories: general

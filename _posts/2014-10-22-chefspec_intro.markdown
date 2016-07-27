@@ -48,7 +48,7 @@ nice compliment if you get 100% test coverage :-)
 
 First I'll post a complete test then break it down
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 # spec/recipes/default_spec.rb
 require 'spec_helper'
 
@@ -106,7 +106,7 @@ describe 'chefspec_example::default' do
 Then come the meat of the matter and the whole point of this exercise, namely,
 the test themselves. Taking the file test as an example :
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
   it 'should create the file' do
     expect(chef_run).to create_cookbook_file('/var/lib/example.dat')
       .with(
@@ -127,7 +127,7 @@ Note that we can also test our own custom resources (in this case a
 [LWRP](https://docs.getchef.com/lwrp.html) called "chefspec_example"). This 
 was done in a way very similar to the built in Chef resources 
 
-{% highlight ruby linenos%}
+{% highlight ruby %}
 it 'should create a chefspec_example resource' do
 expect(chef_run).to create_chefspec_example('widget1').with(
   action: [ :doit ]
@@ -166,7 +166,7 @@ These are placed in the **libraries** directory of your cookbook with the specia
 **matchers.rb**. Thus **chefspec_example/libraries/matchers.rb**. The contents of which
 takes the form
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 # libraries/matchers.rb
 if defined?(ChefSpec)
   def create_chefspec_example(resource_name)

@@ -13,7 +13,7 @@ It is my hope that through more examples people can help get started more easily
 
 So, first the **client code** that uses this PageFactory generated PageObject
 
-{% highlight java linenos %}
+{% highlight java %}
 public class LearnQA {
     public static void main(String[] args) {
         WebDriver driver = new FirefoxDriver();
@@ -36,7 +36,7 @@ without impacting anyone.
 As for the **actual LearnLoginPage**, this uses the convenience of the PageFactory to reduce boiler
 plate code. First the listing -
 
-{% highlight java linenos %}
+{% highlight java %}
 public class LearnLoginPage {
     @FindBy(how = How.CLASS_NAME, using = "login-page")
     private WebElement loginPageClass;

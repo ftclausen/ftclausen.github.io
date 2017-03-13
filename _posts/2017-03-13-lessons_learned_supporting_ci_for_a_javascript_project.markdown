@@ -17,7 +17,7 @@ accomplishing this.
 
 ## Do More Processing Ahead of Time
 
-**Why?**: Speed.  Allow compilation-like tasks \(CSS transforms, TS to JS
+**Why?** Speed.  Allow compilation-like tasks \(CSS transforms, TS to JS
 transpilation, image processing, etc\)
 to be done completely ahead of time.
 
@@ -33,7 +33,7 @@ install particular version locally in VMs.
 
 ## Single command to start App or Tests
 
-**Why?**: Simplicity. Simple startup makes CI easier and less error prone. It
+**Why?** Simplicity. Simple startup makes CI easier and less error prone. It
 also makes it much easier for people to set up local development environments.
 
 Consolidate tasks into, for example, a single grunt task so that CI folks can
@@ -44,7 +44,7 @@ Mesos with Marathon or Kubernetes.
 
 ## Incremental Processing
 
-**Why?**: Speed. Unnecessarily processing unchanged files greatly adds to the
+**Why?** Speed. Unnecessarily processing unchanged files greatly adds to the
 time it takes to run/test your app and also adds compute expenses.
 
 Only transform/compile/process what has changed rather than everything. For
@@ -55,7 +55,7 @@ point to the work of others.
 
 ## Avoid Unmergable Custom Forks of Upstream Dependencies
 
-**Why?**: Avoid lock-in. By using a custom dependency only useful for your team
+**Why?** Avoid lock-in. By using a custom dependency only useful for your team
 you are locked into that dependency and cannot easily upgrade to get new
 features and stability improvements.
 
@@ -67,7 +67,7 @@ there is a more elegant way to accomplish what you want to do.
 
 ## Use Packages Instead of Cloning Repos
 
-**Why?**: Speed. Simplicity. It is quick and easy to install a package.
+**Why?** Speed. Simplicity. It is quick and easy to install a package.
 
 By using packages you can more simply pull down dependencies and also
 make your build more repeatable by depending on particular versions rather than
@@ -77,7 +77,7 @@ repositories which require juggling SSH keys or other credentials.
 
 ## Have an Explicit Version
 
-**Why?**: Simplicity. Having a single version for your whole project makes it
+**Why?** Simplicity. Having a single version for your whole project makes it
 easier to package and deploy.
 
 It may seem obvious but sometimes projects just organically grow and are built

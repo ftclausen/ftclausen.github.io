@@ -23,6 +23,8 @@ and in the below sections I'll explain how to
 I'll first outline the shell snippets and then tie it all together in a CronJob
 configuration.
 
+{:toc}
+
 ### Prerequisites
 
 - Working Kubernetes environment with CronJob support

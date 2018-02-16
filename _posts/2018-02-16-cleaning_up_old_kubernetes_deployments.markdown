@@ -4,8 +4,6 @@ date: 2016-06-27 14:06
 categories: general
 ---
 
-### Context
-
 We run a lot of transient deployments on Kubernetes as part of Jenkins
 end-to-end (E2E) testing. Usually the Jenkins job cleans this up but sometimes
 it fails, for example, if the Jenkins slave Pod is ungracefully killed. But this

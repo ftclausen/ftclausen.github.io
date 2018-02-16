@@ -1,6 +1,6 @@
 ---
 title: "Cleaning up old Kubernetes deployments"
-date: 2016-06-27 14:06
+date: 2018-02-16 16:00
 categories: general
 ---
 

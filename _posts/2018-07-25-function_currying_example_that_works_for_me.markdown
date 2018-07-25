@@ -5,7 +5,10 @@ categories: general
 ---
 
 This example helps me understand one use case of function currying - pre-applying a common argument to make code more
-succinct. Without further ado:
+succinct. These are two utility functions: `method` bolted onto the Function prototype and a `curry` method added to
+objects via the `method` function. To see currying in action take a look from `sprayPaintCar()` onwards.
+
+Without further ado:
 
 ```
 // Helper method taken from JS: The Good Parts

@@ -85,3 +85,10 @@ from their SCM repo without an explicit version. Put in place something so that
 each build has some kind of unique version even if it is just the Git commit
 hash or simply an incrementing number. Or you can do something more
 sophisticated like [semantic versioning](http://www.semver.org).
+
+## Namespace Environment Variables
+
+**Why?** To avoid name collisions.
+
+For example, `CONFIG_FILE` is almost certainly going to be an environment variable used by some other project. Better to
+use something like `MYPROJECT_CONFIG_FILE` to avoid having clashing environment variables.

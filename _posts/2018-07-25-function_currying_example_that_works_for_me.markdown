@@ -10,7 +10,7 @@ objects via the `method` function. To see currying in action take a look from `s
 
 Without further ado:
 
-```
+```javascript
 // Helper method taken from JS: The Good Parts
 Function.prototype.method = function(name, func) {
   this.prototype[name] = func;

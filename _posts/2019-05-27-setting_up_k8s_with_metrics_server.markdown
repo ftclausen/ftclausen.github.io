@@ -34,6 +34,9 @@ things: PKI based trust.
 
 **Overview of where options are used**
 
+This is a summary of [this detailed
+image](https://kubernetes.io/docs/tasks/access-kubernetes-api/configure-aggregation-layer/#authentication-flow)
+
 ![k8s_aggregation.png](/images/k8s_aggregation.png)
 
 **Main apiserver**
@@ -65,6 +68,13 @@ apiserver. We provide similar arguments to the main apiserver and some extra:
 - `--tls-cert-file` - HTTPS cert file signed by the aggregation CA in my case
 - `--tls-proviate-key-file` - Key for above
 - `--kubelet-certificate-authority` - The main apiserver CA certicate so that we can speak to the worker nodes
+
+## References
+
+You can read more below:
+
+- [Configure aggregation layer](https://kubernetes.io/docs/tasks/access-kubernetes-api/configure-aggregation-layer/)
+- [Setting up Extension API server](https://kubernetes.io/docs/tasks/access-kubernetes-api/setup-extension-api-server/)
 
 ## Full argument lists
 

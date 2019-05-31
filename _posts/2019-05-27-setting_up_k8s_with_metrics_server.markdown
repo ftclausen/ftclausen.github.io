@@ -22,6 +22,11 @@ Obviously a running K8s cluster of any type but I set one up using the above Kub
 installing metrics-server can easily be done via Helm but this leaves it in a non-working state; this post attempts to
 address how to get it from non-working -> working.
 
+You'll also need:
+
+- A CA certificate + key for the aggregation layer
+- A key + cert signed by above CA for the metrics-server
+
 ## Terms
 
 - _Main apiserver_ - The core kube-apiserver

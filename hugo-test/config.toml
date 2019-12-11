@@ -1,0 +1,4 @@
+baseURL = "https://ftclausen.github.io/hugo-test"
+languageCode = "en-us"
+title = "Trying out Hugo"
+theme = "ananke"

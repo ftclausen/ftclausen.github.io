@@ -3,26 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ftclausen.github.io/hugo-test/posts/</loc>
+    <loc>https://ftclausen.github.io/hugo-test/public/posts/</loc>
     <lastmod>2019-12-11T15:39:35+11:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ftclausen.github.io/hugo-test/posts/testing-hugo/</loc>
+    <loc>https://ftclausen.github.io/hugo-test/public/posts/testing-hugo/</loc>
     <lastmod>2019-12-11T15:39:35+11:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ftclausen.github.io/hugo-test/</loc>
+    <loc>https://ftclausen.github.io/hugo-test/public/</loc>
     <lastmod>2019-12-11T15:39:35+11:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ftclausen.github.io/hugo-test/categories/</loc>
+    <loc>https://ftclausen.github.io/hugo-test/public/categories/</loc>
   </url>
   
   <url>
-    <loc>https://ftclausen.github.io/hugo-test/tags/</loc>
+    <loc>https://ftclausen.github.io/hugo-test/public/tags/</loc>
   </url>
   
 </urlset>

@@ -15,10 +15,13 @@ incremental: false
 #sass:
 #  sass_dir: _sass
 #  style: compressed
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
 
 # Outputting
 permalink: /:categories/:title/
@@ -70,5 +73,5 @@ defaults:
       author_profile: true
       read_time: false
       comments: false
-      share: true
+      share: false
       related: false

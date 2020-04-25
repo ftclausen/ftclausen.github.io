@@ -9,5 +9,5 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jemoji"
   gem "jekyll-include-cache"
-  gem 'faraday', '0.17.3'
+  gem 'faraday'
 end

@@ -1,6 +1,7 @@
 ---
 title: "Function currying example that works for me"
 date: 2018-07-25 14:00
+classes: wide
 categories: general
 ---
 

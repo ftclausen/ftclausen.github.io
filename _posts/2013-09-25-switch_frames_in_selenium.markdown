@@ -1,6 +1,7 @@
 ---
 title: "Switch Frames in Selenium"
 date: 2013-09-25 13:09
+classes: wide
 categories: selenium
 ---
 

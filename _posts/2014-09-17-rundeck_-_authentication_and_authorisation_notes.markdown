@@ -1,6 +1,7 @@
 ---
 title: "Rundeck - Authentication and Authorisation Notes"
 date: 2014-09-17 08:09
+classes: wide
 categories: general
 ---
 

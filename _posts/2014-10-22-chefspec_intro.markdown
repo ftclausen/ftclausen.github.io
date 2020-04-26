@@ -1,6 +1,7 @@
 ---
 title: "Chefspec Basics - Initial notes"
 date: 2014-10-31 16:10
+classes: wide
 categories: general
 ---
 

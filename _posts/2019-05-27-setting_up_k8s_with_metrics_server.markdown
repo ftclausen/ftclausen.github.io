@@ -1,6 +1,7 @@
 ---
 title: "Kubernetes metrics-server with TLS verification"
 date: 2019-05-27 13:00
+classes: wide
 categories: general
 ---
 

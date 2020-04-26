@@ -1,6 +1,7 @@
 ---
 title: "Docker with Test Kitchen Notes"
 date: 2014-09-09 16:15
+classes: wide
 categories: general
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Using a custom java.time date with Jackson"
 date: 2018-11-26 16:06
+classes: wide
 categories: general
 ---
 

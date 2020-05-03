@@ -57,7 +57,7 @@ $$
 a_i = 6(n-1) - 53
 $$
 
-So if we make our close form the RHS and our recurrence _with the closed form plugged in_ our LHS we get (with the first
+So if we make our close form the LHS and our recurrence _with the closed form plugged in_ our HHS we get (with the first
 line being a reminder of above)
 
 $$

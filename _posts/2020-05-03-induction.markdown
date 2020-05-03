@@ -54,7 +54,7 @@ $$
 and the closed form:
 
 $$
-a_i = 6(n-1) - 53
+a_i = 6(i-1) - 53
 $$
 
 So if we make our close form the LHS and our recurrence _with the closed form plugged in_ our HHS we get (with the first
@@ -63,22 +63,22 @@ line being a reminder of above)
 $$
 \begin{align}
 a_i\ \ \ \ \ & = \color{blue}{a_{i-1}} + 6 \\
-6(n-1) - 53 & = \color{blue}{6(n-2) - 53} + 6
+6(i-1) - 53 & = \color{blue}{6(i-2) - 53} + 6
 \end{align}
 $$
 
 Highlighted in <span style="color:blue">blue</span> is where we substituted in our closed form, tweaked to get the
 previous iteration, into the recurrence "scaffolding". As mentioned, we had to tweak our closed form to get the "minus
-one" or previous iteration.  Hence it is $6(n-2) - 53$; subtracting two instead of one. This is so we can plug it into
+one" or previous iteration.  Hence it is $6(i-2) - 53$; subtracting two instead of one. This is so we can plug it into
 the recurrence form "scaffold" which expects $a_{i-1}$.
 
 Thus, if the LHS = RHS we have proven the induction. Doing some algebra we can get there
 
 $$
 \begin{align}
-6(n-1) - 53 & = 6(n-2) - 53 + 6 \\
-6n -6 -53 & = 6n -12 - 53 + 6 \\
-6n - 59 & = 6n - 59 \\
+6(i-1) - 53 & = 6(i-2) - 53 + 6 \\
+6i -6 -53 & = 6i -12 - 53 + 6 \\
+6i - 59 & = 6i - 59 \\
 \end{align}
 $$
 

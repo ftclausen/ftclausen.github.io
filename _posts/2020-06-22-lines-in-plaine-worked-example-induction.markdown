@@ -49,14 +49,14 @@ L_n & = L_{n-1} + n,\ \ for\ \ n > 0
 \end{align}
 $$
 
-And then the proposed closed for again:
+And then the proposed closed form again:
 
 $$
 L_n = \frac{n(n+1)}{2} + 1
 $$
 
 What we want is to "link" the two together. So we can take the "framework" of the recurrence above and "plug in" the
-$L_{n-1}$ closed form. The $L_{n-1}$ closed form is, literally, subtracting one from the $L_n$ closed for terms:
+$L_{n-1}$ closed form. The $L_{n-1}$ closed form is, literally, subtracting one from the $L_n$ closed form terms:
 
 $$
 L_{n-1} = \frac{(n-1)n}{2} + 1

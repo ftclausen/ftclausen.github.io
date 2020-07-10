@@ -70,16 +70,23 @@ $$ J(2n+1) = 2J(n) + 1, \ \ \ \ \text{for n} \geq 1\\ $$
 As with even our closed form is such that $2J(n)+1 = 2\ell+1$ except we are adding one and we also have to make sure that
 the $\ell$ is odd. So the "conversion process" is as follows; end result highlighted in blue
 
+Starting point:
+
 $$
-\begin{align}
-2n+1 &= 2^m+\ell = 2\ell+1 \\
-\\
-n+1 &= 2^{m-1}+\ell/2 = \frac{2(\ell+1)}{2} \\
-\\
-n &= 2^{m-1}+\frac{\ell-1}{2} = \color{blue}{\frac{2(\ell-1)}{2} + 1 }\\
-\end{align}
+2n+1 = 2^m+\ell = 2\ell+1
 $$
 
+Then subtract 1:
+
+$$
+n+1 = 2^{m-1}+\ell/2 = \frac{2(\ell+1)}{2}
+$$
+
+Finally divide by two to finish conversion $n$ from $2n+1$:
+
+$$
+n = 2^{m-1}+\frac{\ell-1}{2} = \color{blue}{\frac{2(\ell-1)}{2} + 1 }
+$$
 
 We can then substitute in our "n"-ified closed form equivalent into the recurrence (replace the $J()$ recurrent call) to
 do the induction; highlighted in blue

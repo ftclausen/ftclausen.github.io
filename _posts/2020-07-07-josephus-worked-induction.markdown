@@ -76,13 +76,13 @@ $$
 2n+1 = 2^m+\ell = 2\ell+1
 $$
 
-Then subtract 1:
+First divide by two:
 
 $$
 n+1 = 2^{m-1}+\ell/2 = \frac{2(\ell+1)}{2}
 $$
 
-Finally divide by two to finish conversion $n$ from $2n+1$:
+Then subtract one:
 
 $$
 n = 2^{m-1}+\frac{\ell-1}{2} = \color{blue}{\frac{2(\ell-1)}{2} + 1 }

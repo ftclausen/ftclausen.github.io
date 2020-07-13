@@ -3,6 +3,7 @@ title: "Concrete Mathematics: My Notes on Josephus Problem Induction"
 date: 2020-07-07 15:00
 classes: wide
 categories: mathematics
+use_math: true
 ---
 
 The explanations in Concrete Mathematics are very good if a bit terse. So, [as

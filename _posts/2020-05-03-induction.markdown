@@ -3,6 +3,7 @@ title: "Really Simple Mathematical Induction Example"
 date: 2020-05-03 21:00
 classes: wide
 categories: mathematics
+use_math: true
 ---
 
 I am going to attempt to explain my understanding of mathematical induction (the weak induction variety) using a super simple

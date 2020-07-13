@@ -12,6 +12,9 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    {% if page.use_math %}
+    {% include _mathjax_support.html %}
+    {% endif %}
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
@@ -37,22 +40,6 @@
     </div>
 
     {% include scripts.html %}
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        jax: ["input/TeX", "output/HTML-CSS"],
-        tex2jax: {
-          inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
-          displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        },
-        //,
-        //displayAlign: "left",
-        //displayIndent: "2em"
-      });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"" type="text/javascript"></script>
 
   </body>
 </html>

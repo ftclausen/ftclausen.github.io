@@ -3,6 +3,7 @@ title: "Concrete Mathematics Book: Worked example for \"Lines in the Plane\" Ind
 date: 2020-06-22 20:40
 classes: wide
 categories: mathematics
+use_math: true
 ---
 
 In the book [Concrete

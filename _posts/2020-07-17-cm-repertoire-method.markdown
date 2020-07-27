@@ -117,10 +117,14 @@ The book sums all this up as
 
 > Sure enough, it's true (by induction on $m$) that $A(2^m + \ell) = 2^m$
 
-The induction they talk about seems to be
+The induction they talk about, _I think_, is
 
 $$
-A(2^m + \ell) = 2A(n) = 2(2^{m-1}) = 2^m
+\begin{align}
+A(2n) &= 2A(n) \\
+      &= 2(2^{m-1}) \\
+      &= 2^m \\
+\end{align}
 $$
 
 So, finally, this repertoire item ends up being

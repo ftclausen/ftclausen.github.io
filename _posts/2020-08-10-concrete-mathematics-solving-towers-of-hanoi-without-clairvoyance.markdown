@@ -11,9 +11,10 @@ This post expands, in terms of verbosity, what is presented in equation 1.3 wher
 > It doesn't take genius to discover that the solution to _this_ recurrence is just $U_n = 2^n$; hence $T_n = 2^n - 1$.
 Even a computer could discover this.
 
-This was not immediately obvious to with not having the mathematical fluency that comes with either working in the field
-or being in full-time study. What I needed to do was unroll that recurrence both in symbolic and concrete forms to "get
-it". For reference, the recurrences are labelled as 1.1 in the book, I'll put them here
+This was not immediately obvious to me because a) I'm early in my maths adventures and b) I don't have the mathematical
+fluency that comes with either working in the field or being in full-time study. What I needed to do was unroll that
+recurrence both in symbolic and concrete forms to "get it". For reference, the recurrences are labelled as 1.1 in the
+book, I'll put them here
 
 $$
 \begin{align}

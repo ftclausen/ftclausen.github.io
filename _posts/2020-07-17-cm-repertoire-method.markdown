@@ -2,7 +2,7 @@
 title: "Concrete Mathematics: Repertoire Method Notes"
 date: 2020-07-24 21:42
 classes: wide
-categories: mathematics
+categories: mathematics concrete-mathematics
 use_math: true
 ---
 

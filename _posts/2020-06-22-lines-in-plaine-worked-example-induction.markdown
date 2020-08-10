@@ -2,7 +2,7 @@
 title: "Concrete Mathematics Book: Worked example for \"Lines in the Plane\" Induction Step"
 date: 2020-06-22 20:40
 classes: wide
-categories: mathematics
+categories: mathematics concrete-mathematics
 use_math: true
 ---
 

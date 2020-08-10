@@ -2,7 +2,7 @@
 title: "Concrete Mathematics: My Notes on Josephus Problem Induction"
 date: 2020-07-07 15:00
 classes: wide
-categories: mathematics
+categories: mathematics concrete-mathematics
 use_math: true
 ---
 

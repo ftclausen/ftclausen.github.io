@@ -1,5 +1,5 @@
 ---
-title: "Concrete Mathematics: Solving Towers of Hanoi without clairvoyance"
+title: "Concrete Mathematics: Solving Towers of Hanoi recurrence without clairvoyance"
 date: 2020-08-10 12:25
 classes: wide
 use_math: true
@@ -36,7 +36,7 @@ To turn the above recurrence into a sentence: We first move all disks above the 
 ($T_{n-1}$), then move the bottom disk to the destination peg ($+1$), and finally the disks on the middle peg are moved
 to the destination ($T_{n-1}$).
 
-Now the authors suggest simplifying the recurrence by adding $1$ to both sides turning it into
+Now the authors suggest adjusting the recurrence by adding $1$ to both sides turning it into
 
 $$
 \begin{align}

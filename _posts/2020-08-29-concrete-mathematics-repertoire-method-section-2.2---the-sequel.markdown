@@ -66,8 +66,8 @@ $$
 # Finding $C(n)$
 
 This one I didn't figure out without some help from Professor Internet in the form of Hans Lundmark in [a
-comment](https://math.stackexchange.com/questions/67939/repertoire-method-clarification-required-concrete-mathematics#comment161060_67946). For this particular repertoire item the authors are setting $R_n$ to $n^2$. With $R_n$ set to that it implies $\alpha =
-0$ because $0^2 = \alpha$. To then see what $\beta$ and $\gamma$ need to be in order to eliminate them we simply plug in
+comment](https://math.stackexchange.com/questions/67939/repertoire-method-clarification-required-concrete-mathematics#comment161060_67946).
+For this particular repertoire item the authors are setting $R_n$ to $n^2$. With that done it implies $\alpha = 0$ because $0^2 = \alpha$. To then see what $\beta$ and $\gamma$ need to be in order to eliminate them we simply plug in
 $n^2$ to the recurrence RHS so
 
 $$

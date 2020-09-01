@@ -108,3 +108,38 @@ n^2 + n &= 2C(n) \\
 \frac{n^2 + n}{2} &= C(n)
 \end{align}
 $$
+
+# Tie it all together
+
+So the final closed form ends up being
+
+$$
+R_n = \alpha + n\beta + (\frac{n^2 + n}{2})\gamma
+$$
+
+But, wait, there's more! The sum recurrence of the form (2.6 in book)
+
+$$
+\begin{align}
+S_0 &= a_0 \\
+S_n &= S_{n-1} + a_n
+\end{align}
+$$
+
+can be turned into the recurrence (2.7 in book) of this form
+
+$$
+\begin{align}
+R_0 &= \alpha \\
+R_n &= R_{n-1} + \beta + \gamma n
+\end{align}
+$$
+
+This can be done by noticing that, in the case of 2.7, that $\alpha = \beta = a$ and $\gamma = b$. So our closed form
+can be simplified in the following way
+
+$$
+aA(n) + aB(n) + bC(n) \\
+= a\cdot 1 + a\cdot n + b(\frac{n^2 + n}{2})  \\
+= a(n + 1) + b(n + 1)n/2
+$$

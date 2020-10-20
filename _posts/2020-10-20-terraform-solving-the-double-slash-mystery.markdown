@@ -1,10 +1,12 @@
 ---
-title: "Terraform: Solving the double slash mystery"
+title: "Terraform: Solving the double slash mystery with Terragrunt"
 date: 2020-10-20 11:36
 classes: wide
 use_math: true
 categories: dev infra
 ---
+
+The solution I found to my particular case of "Error: Unreadable module directory" when using Terragrunt.
 
 # Terms
 

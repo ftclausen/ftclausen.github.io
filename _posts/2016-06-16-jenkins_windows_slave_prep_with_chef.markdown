@@ -2,7 +2,7 @@
 title: "Jenkins Slave on Windows Prep"
 date: 2016-06-16 15:06
 classes: wide
-categories: general
+categories: infra jenkins
 ---
 
 While not sexy we have a product that is officially supported on Windows and

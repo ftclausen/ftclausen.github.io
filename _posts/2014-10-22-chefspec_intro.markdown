@@ -2,7 +2,7 @@
 title: "Chefspec Basics - Initial notes"
 date: 2014-10-31 16:10
 classes: wide
-categories: general
+categories: infra chef
 ---
 
 This post sums up the various aspects of writing Chefspec tests so that when I 

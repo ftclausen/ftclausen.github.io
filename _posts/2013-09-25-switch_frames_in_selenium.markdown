@@ -2,7 +2,7 @@
 title: "Switch Frames in Selenium"
 date: 2013-09-25 13:09
 classes: wide
-categories: selenium
+categories: selenium dev
 ---
 
 I've noticed that I was getting inexplicable "ElementNotFound" errors in Selenium when

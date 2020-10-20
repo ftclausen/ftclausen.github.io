@@ -2,7 +2,7 @@
 title: "Bash history expansion cheatsheet"
 date: 2013-12-02 12:11
 classes: wide
-categories: general
+categories: shell dev
 ---
 
 Often I forget the precise letter incantation for a particular 

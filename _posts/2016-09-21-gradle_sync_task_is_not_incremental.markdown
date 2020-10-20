@@ -2,7 +2,7 @@
 title: "Gradle Sync task is not incremental"
 date: 2016-09-21 12:09
 classes: wide
-categories: general
+categories: dev
 ---
 
 While this may seem obvious to some it came as a surprise to learn that Gradle's

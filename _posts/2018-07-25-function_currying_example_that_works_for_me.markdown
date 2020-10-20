@@ -2,7 +2,7 @@
 title: "Function currying example that works for me"
 date: 2018-07-25 14:00
 classes: wide
-categories: general
+categories: dev
 ---
 
 This example helps me understand one use case of function currying - pre-applying a common argument to make code more

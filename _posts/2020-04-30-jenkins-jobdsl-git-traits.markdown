@@ -2,7 +2,7 @@
 title: "Using JobDSL Configuration Blocks to Set Additional Branch Source Options"
 date: 2020-04-30 13:00
 classes: wide
-categories: general
+categories: infra jenkins
 ---
 
 This post outlines some notes on how to control the generated Jenkins job XML via the `configure` block in JobDSL. This

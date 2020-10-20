@@ -2,7 +2,7 @@
 title: "Cleaning up old Kubernetes deployments"
 date: 2018-02-16 16:00
 classes: wide
-categories: general
+categories: infra kubernetes
 ---
 
 We run a lot of transient deployments on Kubernetes as part of Jenkins

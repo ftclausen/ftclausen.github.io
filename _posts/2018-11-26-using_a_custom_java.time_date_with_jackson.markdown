@@ -2,7 +2,7 @@
 title: "Using a custom java.time date with Jackson"
 date: 2018-11-26 16:06
 classes: wide
-categories: general
+categories: dev
 ---
 
 It look me quite a bit more research to figure out how to use a custom (or lightly custom) time format with Jackson. I

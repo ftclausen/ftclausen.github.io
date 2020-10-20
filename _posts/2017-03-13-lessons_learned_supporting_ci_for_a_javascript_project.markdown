@@ -2,7 +2,7 @@
 title: "Lessons Learned Supporting Continuous Integration (CI) for a Javascript Project"
 date: 2017-03-13 14:00
 classes: wide
-categories: general
+categories: dev
 ---
 
 I've been supporting the CI needs of a JS project and would like to assemble the

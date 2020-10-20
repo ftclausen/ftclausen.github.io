@@ -2,7 +2,7 @@
 title: "Redis High Availability Options"
 date: 2014-11-28 09:11
 classes: wide
-categories: general
+categories: infra
 ---
 
 This article outlines the various Redis HA options and the tradeoffs between

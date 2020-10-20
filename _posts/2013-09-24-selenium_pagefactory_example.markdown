@@ -2,7 +2,7 @@
 title: Selenium Webdriver PageFactory Worked Example
 date: 2013-09-24 10:09
 classes: wide
-categories: selenium
+categories: selenium dev
 ---
 
 I found that, while adequate, the standard [selenium examples][selenium-examples] for PageFactory were not quite

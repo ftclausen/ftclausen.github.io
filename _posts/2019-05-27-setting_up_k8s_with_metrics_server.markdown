@@ -2,7 +2,7 @@
 title: "Kubernetes metrics-server with TLS verification"
 date: 2019-05-27 13:00
 classes: wide
-categories: general
+categories: infra
 ---
 
 These are my notes on what it took to integrate [metrics-server](https://github.com/kubernetes-incubator/metrics-server)

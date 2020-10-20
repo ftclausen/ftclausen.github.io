@@ -2,7 +2,7 @@
 title: "Windows : Inserting Git Credentials Ahead Of Time"
 date: 2016-06-27 14:06
 classes: wide
-categories: general
+categories: infra
 ---
 
 **Problem**: Git for Windows hangs on Jenkins when attempting to use the "`store`" credential

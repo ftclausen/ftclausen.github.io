@@ -41,6 +41,10 @@ Pretty simple really
 
 # As Nested Loops
 
+NOTE: This illustration is focused on the _index variables_ not the actual summation operation. We're iterating over an
+existing table to show how the results end up the same when swapping the indexes. In a "real" summation we'd be summing
+over the previous value not some pre-existing data set.
+
 For loops, especially classic ones, are basically summations in code. This Python snippet adds up an array of arrays
 "table" where the inner loop depends on the index of the outer loop
 

@@ -38,7 +38,7 @@ setting $R_n = 1$. **NOTE** it is not the same as setting $n = 1$; for this repe
 
 So if the whole sum is $1$ what does that mean? Using the recurrence it must mean that $S_{n-1}$ is $1$, $\beta$ is $0$,
 and $\gamma$ is $0$. If $\beta$ and $\gamma$ were anything other than zero then the sum would not be $1$. Hence $\alpha
-= 0$
+= 1$
 
 Now, using that info, we can sub-in $\alpha = 1$, $\beta = 0$, $\gamma = 0$ to the closed form
 

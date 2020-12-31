@@ -126,7 +126,7 @@ S_n &= S_{n-1} + a_n
 \end{align}
 $$
 
-can be turned into the recurrence (2.7 in book) of this form
+Takes the general sum-recurrence form of
 
 $$
 \begin{align}
@@ -135,7 +135,13 @@ R_n &= R_{n-1} + \beta + \gamma n
 \end{align}
 $$
 
-This can be done by noticing that, in the case of 2.7, that $\alpha = \beta = a$ and $\gamma = b$. So our closed form
+Which, in turn, looks like this in summation form
+
+$$
+\sum^n_{k=0} (a + bk)
+$$
+
+Now, in the case of 2.7, we see that $\alpha = \beta = a$ and $\gamma = b$. So our closed form
 can be simplified in the following way
 
 $$
@@ -143,3 +149,5 @@ aA(n) + aB(n) + bC(n) \\
 = a\cdot 1 + a\cdot n + b(\frac{n^2 + n}{2})  \\
 = a(n + 1) + b(n + 1)n/2
 $$
+
+Because we can _plug in_ the known values for $A(n)$, $B(n)$, and $C(n)$

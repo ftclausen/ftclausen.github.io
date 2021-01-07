@@ -126,7 +126,7 @@ S_n &= S_{n-1} + a_n
 \end{align}
 $$
 
-Takes the general sum-recurrence form of
+Looks like this in the general sum-recurrence form of
 
 $$
 \begin{align}

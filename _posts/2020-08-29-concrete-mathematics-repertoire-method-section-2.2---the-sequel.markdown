@@ -83,7 +83,7 @@ $\gamma$)
 
 $$
 \begin{align}
-n^2 &= n^2 - 2n + \gamma n + \beta \\
+n^2 &= n^2 - 2n + \gamma n + 1 + \beta \\
 n^2 &= n^2 + n(\gamma -2) + 1(1 + \beta)
 \end{align}
 $$

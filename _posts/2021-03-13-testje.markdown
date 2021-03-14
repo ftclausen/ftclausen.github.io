@@ -6,19 +6,4 @@ use_math: true
 categories: 
 ---
 
-This works:
-```
-This is a test $\unicode{9744}_{n-1}$ sentence with unicode math
-```
-As shown below:
-
-This is a test $\unicode{9744}_{n-1}$ sentence with unicode math
-
-However this does not
-```
-This is a test $\unicode{9744}_n = \unicode{9744}_{n-1} + n^2$ sentence with unicode math
-```
-
-As shown below:
-
-This is a test $\unicode{9744}_n = \unicode{9744}_{n-1} + n^2$ sentence with unicode math
+This is a test $\unicode{9744}\_n = \unicode{9744}_{n-1} + n^2$ sentence with unicode math

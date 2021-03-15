@@ -1,12 +1,12 @@
 ---
-title: "Using integrals to find sum of squares closed form"
+title: "Using integrals to find sum of squares closed form - part 1"
 date: 2021-03-10 20:08
 classes: wide
 use_math: true
 categories: mathematics
 ---
 
-As with all my post here I'll try to give a more verbose version of what the book covers; specifically how to get the
+As with all my posts here I'll try to give a more verbose version of what the book covers; specifically how to get the
 sum of squares closed form all the way. All the book explains is finding the error in the approximation and the
 approximation itself.
 
@@ -27,21 +27,25 @@ calculator. The area under this graph is approximately $\unicode{9744}_n$
 
 ![approximation x^2](/images/approximation_x_squared.png)
 
-# Part 1 - Examine Error in Approximation $n^3/3$
+This post covers the first "sub-method" in _Method 4: Replace sums by integrals_
 
-What confused me is this is not exactly the same as counting the error wedges on the beautiful graph in the book. This is
-literally the error in our first pass closed form approximation using the derivative rules.
+# Examine Error in Approximation $n^3/3$
 
-So we are working out the area under the curve of $x^2$ which, according to the rules of derivatives, is $\int x^2dx =
-n^3/3$. Thus we know the sum of squares is approximately $\frac{1}{3}n^3$.
+What confused me is this is not exactly the same as counting the error wedges on the beautiful graph in the book. This
+is literally the error in our first pass closed form approximation using the integration rules where the area under
+$x^2$ is $\int x^2dx = n^3/3$. Thus we know the sum of squares is approximately $\frac{1}{3}n^3$.
 
-Thus the error in approximation is $E\_n = \unicode{9744}\_n - \frac{1}{3}n^3$ and therefore $\color{green}{E\_{n-1} = \unicode{9744}\_{n-1} - \frac{(n-1)^3}{3}}$
+Thus the error in approximation is $E\_n = \unicode{9744}\_n - \frac{1}{3}n^3$ and therefore $E\_{n-1} = \unicode{9744}\_{n-1} - \frac{(n-1)^3}{3}$. Rearranging we get $\color{green}{\unicode{9744}\_{n-1} = E\_{n-1} + \frac{(n-1)^3}{3} }$
 
-Using $E_n$ above and solving for the sum of squares we get $\color{blue}{\unicode{9744}\_n = E\_n +\frac{1}{3}n^3}$. Finally we also know what $\unicode{9744}\_n = \unicode{9744}\_{n-1} + n^2$. The book then very elegantly puts this all together to find a simple recurrence for $E_n$ as follows
+We also know what $\color{red}{\unicode{9744}\_n = \unicode{9744}\_{n-1} + n^2}$. The book then very elegantly puts this all together to find a simple recurrence for $E_n$ as follows
 
 $$
-E_n = \unicode{9744}_n - \frac13 n^3 = \unicode{9744}_{n-1} + n^2 - \frac13 n^3 = \color{green}{k}
+\begin{align}
+E_n &= \unicode{9744}_n - \frac13 n^3 = \color{red}\unicode{9744}_{n-1} + n^2 \color{#3d4144} - \frac13 n^3 \\
+    &= \color{green}E_{n-1} + \frac{(n-1)^3}{3} \color{#3d4144}+ n^2 - \frac13 n^3 \\
+    &= E_{n-1} + n - \frac13
+\end{align}
 $$
 
-Therefore if we could find the closed form of $E_n$ we're sorted! 
+Therefore if we could just find the closed form of $E_n$ we're sorted! 
 

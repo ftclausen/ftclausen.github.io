@@ -47,5 +47,48 @@ E_n &= \unicode{9744}_n - \frac13 n^3 = \color{red}\unicode{9744}_{n-1} + n^2 \c
 \end{align}
 $$
 
-Therefore if we could just find the closed form of $E_n$ we're sorted! 
+## Stepping Stone: Finding $E_n$ Recurrence Closed Form
 
+Therefore if we could just find the closed form of $E_n$ we can find the closed form of $\unicode{9744}_n$ because we can do $\unicode{9744}_n = E_n + \frac13 n^3$. Let's break the recurrence $E_n$ down to it's component bits
+
+- $E_{n-1} + n$ - Here we are just summing in which we can do with Gauss' formula: $n(n-1)/2$
+- $\frac13$ - This is just a constant so to find the sum we simply multiply by how many times we're summing so $n \cdot \frac13$
+
+THUS our $E_n$ closed form is
+
+$$
+E_n = \frac{n(n+1)}{2} - \frac{n}{3}
+$$
+
+## Using $E_n$ to Find $\unicode{9744}_n$ Closed Form
+
+We can prove $E_n$ closed form works via some induction I'll add at the end to avoid distracting from the main topic.
+So, finally, our $\unicode{9744}_n$ ends up being
+
+$$
+\unicode{9744}_n = \frac{n(n+1)}{2} - \frac{n}{3} + \frac13 n^3
+$$
+
+Which should be equivalent to what the book provides in equation 2.39
+
+$$
+\unicode{9744}_n = \frac{n(n+\frac12)(n+1)}{3}\ \ \ \ \ \text{for }n \geq 0
+$$
+
+TODO: Find out how to get from the form I have above to the book's closed form 2.39.
+
+# Appendix: Induction Proof of $E_n$
+
+For the recurrence $E_n = E_{n-1} + n - \frac13$ we find that the closed form is $E_n = \frac{n(n+1)}{2} - \frac{n}{3}$.
+This checks out via the following induction proof (following the same process as in [my super simple induction post](http://ftclausen.github.io/mathematics/induction/))
+
+$$
+\begin{align}
+\frac{n(n + 1)}{2} - \frac n3 &= \frac{(n-1)n}{2} - \frac{n-1}{3} + n - \frac13 \\
+\frac{3n(n+1) - 2n}{6} &= \frac{3n(n-1) -2(n-1) +6n -2}{6} \\
+\frac{3n^2 + 3n - 2n}{6} &= \frac{3n^2 - 3n - 2n + 2 + 6n - 2}{6} \\
+\frac{3n^2 + n}{6} &= \frac{3n^2 + n}{6} \\
+\end{align}
+$$
+
+And RHS is the same as LHS so closed form is OK.

@@ -18,18 +18,22 @@ So this does not represent anything real and the base case was randomly generate
 The exercise uses the following recurrence and asks you to find the sum of 880 terms. 
 
 $$
-a_1 = -53 \\
-a_i = a_{i-1} + 6
+\begin{align}
+a_1 &= -53 \\
+a_i &= a_{i-1} + 6
+\end{align}
 $$
 
 So you have to find a "closed form" so that you don't have to actually do 880 iterations (or write a program to do it).
 By writing out the first few iterations you get
 
 $$
+\begin{align}
 a_1 = -53 \\
 a_2 = -47 \\
 a_3 = -41 \\
 a_4 = -35 \\
+\end{align}
 $$
 
 Thus it would appear our closed form is
@@ -77,9 +81,9 @@ Thus, if the LHS = RHS we have proven the induction. Doing some algebra we can g
 
 $$
 \begin{align}
-6(i-1) - 53 & = 6(i-2) - 53 + 6 \\
-6i -6 -53 & = 6i -12 - 53 + 6 \\
-6i - 59 & = 6i - 59 \\
+6(i-1) - 53 &= 6(i-2) - 53 + 6 \\
+6i -6 -53 &= 6i -12 - 53 + 6 \\
+6i - 59 &= 6i - 59 \\
 \end{align}
 $$
 

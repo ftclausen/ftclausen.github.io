@@ -1,9 +1,0 @@
----
-title: "MathJax Issue Reproducer"
-date: 2021-03-13 20:35
-classes: wide
-use_math: true
-categories: 
----
-
-This is a test $\unicode{9744}\_n = \unicode{9744}_{n-1} + n^2$ sentence with unicode math

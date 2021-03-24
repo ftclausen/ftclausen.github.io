@@ -66,7 +66,7 @@ We can prove $E_n$ closed form works via some induction I'll add at the end to a
 So, finally, our $\unicode{9744}_n$ ends up being
 
 $$
-\unicode{9744}_n = \frac{n(n+1)}{2} - \frac{n}{3} + \frac13 n^3
+\unicode{9744}_n = \frac{n(n+1)}{2} - \frac{n}{3} + \frac13 n^3\ \ \ \ \ \text{for }n \geq 0
 $$
 
 Which should be equivalent to what the book provides in equation 2.39

@@ -24,3 +24,11 @@ it'll improve my programming interview skills far more than just reading somethi
 Finally, I've been enjoying this mathematical adventure much more than I expected. The more effort I put in (as much as
 one can with a toddler at home haha) the more I enjoy it. I suspect I'll be doing mathematics for its own sake and
 branching out from CS topics.
+
+To sum up my reasons in point form (and add some new ones):
+
+- Because I love it and gain much satisfaction from finally understanding something new and see how it applies to my world. It is exciting
+- In order to cultivate a more methodical and simpler attitude to problem solving and building tools
+- Understand programming algorithms at a deeper level and see why they work the way they do. As well as how to make my own algorithms better/simpler
+- Eventually apply mathematics to learning about astronomy/astrophysics and gain a more intuitive understanding to some topics
+- As an insurance policy to be able to move to a different career path if I need or want to

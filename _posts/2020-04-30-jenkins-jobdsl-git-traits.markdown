@@ -5,6 +5,53 @@ classes: wide
 categories: infra jenkins
 ---
 
+# UPDATE
+
+It is no longer necessary to use the `configure` block to adjust the generated XML directly; proper support for these
+traits have been added in the meantime. Thanks to [superbob](https://github.com/superbob)'s
+[suggestion](https://github.com/ftclausen/ftclausen.github.io/issues/4) we can now use vanilla JobDSL. So now a minimal
+job would look like this
+
+```
+multibranchPipelineJob( 'example-job' ) {
+  description( 'example-job' )
+  branchSources {
+    branchSource {
+      source {
+        git {
+          id( 'my-super-job' )
+          remote( 'ssh://git.example.com/my_repo.git' )
+          credentialsId( 'somecred' )
+          traits {
+            cloneOptionTrait {
+              extension {
+                shallow( true )
+                noTags( true )
+                reference( '/path/to/reference_repo.git' )
+                depth( 100 )
+                timeout( 60 )
+              }
+            }
+            pruneStaleBranchTrait()
+            ignoreOnPushNotificationTrait()
+            gitLFSPullTrait()
+            checkoutOptionTrait {
+              extension {
+                timeout( 60 )
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+Instead of needing the below configure block in the original post.
+
+# ORIGINAL BLOG POST
+
 This post outlines some notes on how to control the generated Jenkins job XML via the `configure` block in JobDSL. This
 is necessary when the plugin does not natively support a particular configuration option.
 
@@ -50,6 +97,7 @@ multibranchPipelineJob( 'example-job' ) {
           id( 'my-super-job' )
           remote( 'ssh://git.example.com/my_repo.git' )
           credentialsId( 'somecred' )
+          traits {
             cloneOptionTrait {
               extension {
                 shallow( true )

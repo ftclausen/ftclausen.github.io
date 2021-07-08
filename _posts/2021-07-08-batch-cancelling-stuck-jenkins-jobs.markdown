@@ -1,5 +1,5 @@
 ---
-title: "Batch cancelling stuck Jenkins jobs"
+title: "Batch cancelling stuck Jenkins queued jobs"
 date: 2021-07-08 09:43
 classes: wide
 use_math: true

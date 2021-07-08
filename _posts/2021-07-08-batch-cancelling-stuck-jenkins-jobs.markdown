@@ -29,7 +29,7 @@ import groovy.time.TimeCategory
 
 def q = Jenkins.instance.queue
 def now = new Date();
-def maxAgeHours = 1
+def maxAgeHours = 6
 
 q.items.findAll { it.stuck }.each {
   def taskStart = new Date(it.inQueueSince)

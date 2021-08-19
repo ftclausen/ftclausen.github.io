@@ -67,8 +67,8 @@ line being a reminder of above)
 
 $$
 \begin{align}
-a_i\ \ \ \ \ & = \color{blue}{a_{i-1}} + 6 \\
-6(i-1) - 53 & = \color{blue}{6(i-2) - 53} + 6
+a_i\ \ \ \ \ & = \color{blue}{a_{i-1}}\color{#3d4144} + 6 \\
+6(i-1) - 53 & = \color{blue}{6(i-2) - 53}\color{#3d4144} + 6
 \end{align}
 $$
 

@@ -66,20 +66,20 @@ $$
 So, once more with gusto and blue highlighting to show the "plugging in", the recurrence is
 
 $$
-L_n = \color{blue}{L_{n-1}} + n,\ \ for\ \ n > 0
+L_n = \color{blue}{L_{n-1}}\color{#3d4144} + n,\ \ for\ \ n > 0
 $$
 
 Now we plug in the $L_{n-1}$ version of the closed form
 
 $$
-L_n =  \color{blue}{\frac{(n-1)n}{2} + 1} + n
+L_n =  \color{blue}{\frac{(n-1)n}{2} + 1}\color{#3d4144} + n
 $$
 
 Then (with Algebra!) we can prove the induction
 
 $$
 \begin{align}
-L_n & =  \color{blue}{\frac{(n-1)n}{2} + 1} + n \\
+L_n & =  \color{blue}{\frac{(n-1)n}{2} + 1}\color{#3d4144} + n \\
 & = \frac{(n-1)n}{2} + \frac 22 + \frac{2n}{2} \\
 & = \frac{n^2 - n + 2 + 2n}{2} \\
 & = \frac{n^2 + n + 2}{2} \\

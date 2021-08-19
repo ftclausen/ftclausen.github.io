@@ -100,8 +100,8 @@ recurrences without the addition of the constants. Thus setting $\alpha = 1$, $\
 $$
 \begin{align}
 A(1) &= 1; \\
-\color{blue}{A(2n)} &= 2A(n) + \beta =  2A(n) + 0 = \color{blue}{2A(n)},\ \ \ \ \text{for}\ n \geq 1; \\
-\color{blue}{A(2n+1)} &= 2A(n) + \gamma = 2A(n) + 0 = \color{blue}{2A(n)},\ \ \ \ \text{for}\ n \geq 1; \\
+\color{blue}{A(2n)}\color{#3d4144} &= 2A(n) + \beta =  2A(n) + 0 = \color{blue}{2A(n)}\color{#3d4144},\ \ \ \ \text{for}\ n \geq 1; \\
+\color{blue}{A(2n+1)}\color{#3d4144} &= 2A(n) + \gamma = 2A(n) + 0 = \color{blue}{2A(n)}\color{#3d4144},\ \ \ \ \text{for}\ n \geq 1; \\
 \end{align}
 $$
 
@@ -176,13 +176,13 @@ $$
 $$
 
 Now we need to find when these equations are true with regards to the values of $\alpha$, $\beta$, and $\gamma$. It
-turns out that this is when $\alpha=\color{blue}{1}, \beta=\color{blue}{0}, \gamma=\color{blue}{1}$. Explicitly:
+turns out that this is when $\alpha=\color{blue}{1}\color{#3d4144}, \beta=\color{blue}{0}\color{#3d4144}, \gamma=\color{blue}{1}\color{#3d4144}$. Explicitly:
 
 $$
 \begin{align}
-1 &= \color{blue}{1}; \ \ \ \text{for}\ \alpha \\
-2n &= 2\cdot n + \color{blue}{0}; \ \ \ \text{for}\ \beta \\
-2n+1 &= 2\cdot n + \color{blue}{1}; \ \ \ \text{for}\ \gamma \\
+1 &= \color{blue}{1}\color{#3d4144}; \ \ \ \text{for}\ \alpha \\
+2n &= 2\cdot n + \color{blue}{0}\color{#3d4144}; \ \ \ \text{for}\ \beta \\
+2n+1 &= 2\cdot n + \color{blue}{1}\color{#3d4144}; \ \ \ \text{for}\ \gamma \\
 \end{align}
 $$
 

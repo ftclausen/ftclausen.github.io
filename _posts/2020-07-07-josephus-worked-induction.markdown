@@ -95,7 +95,7 @@ do the induction; highlighted in blue
 $$
 \begin{align*}
 J(2^m+\ell)&=2J\left(2^{m-1}+\frac{\ell-1}2\right)+1\\
-&=2\left(\color{blue}{\frac{2(\ell-1)}2+1}\right)+1\\
+&=2\left(\color{blue}{\frac{2(\ell-1)}2+1}\color{#3d4144}\right)+1\\
 &=2\ell+1\;,
 \end{align*}
 $$

@@ -58,8 +58,8 @@ $$
 $$
 
 I get the rearrangement of terms but how $\Delta(uv)$ becomes $uv$ was a bit of a mystery. After the requisite amount of
-time overthinking it, it is just literally following through the steps of making $\Delta(uv)$ $-\Delta(uv)$ and shaking
-things out. I find it useful to expand everything and go from there:
+time overthinking it, it is just literally following through the steps of turning $\Delta(uv)$ into $-\Delta(uv)$ when
+re-arranging; then shaking things out. I find it useful to expand everything and go from there:
 
 $$
 \begin{align}

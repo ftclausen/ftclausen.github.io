@@ -10,7 +10,7 @@ In the book [Concrete
 Mathematics](https://www.amazon.com.au/Concrete-Mathematics-Foundation-Computer-Science/dp/0201558025) by Graham, Knuth,
 and Patashnik there is a section in Chapter 1 called "Lines in the Plane". See the book for details but it is, basically
 , a question of what is the max number of $L_n$ areas defined by $n$ lines through the plane they are on. So a plane
-with no lines through it has 1 region, one line has 2 regions, three lines has 7 regions, etc.
+with no lines through it has 1 region, one line has 2 regions, three lines has 4 regions, etc.
 
 # The Recurrence and Closed Form
 

@@ -89,4 +89,12 @@ L_n & =  \color{blue}{\frac{(n-1)n}{2} + 1}\color{#3d4144} + n \\
 \end{align}
 $$
 
-And so we get our closed form back meaning the induction is complete.
+And so we get our closed form back meaning the induction is complete. So, once
+more to link it together in colour:
+
+$$
+\begin{align}
+L_{n} & = \color{blue}L_{n-1}\color{#3d4144} +n \\
+& = \color{blue}{\frac{n(n + 1)}{2} + 1}\color{#3d4144} + n
+\end{align}
+$$

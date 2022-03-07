@@ -20,7 +20,7 @@ title                    : "Friedrich's \"Fred\" Notes"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Friedrich's \"Fred\" Clausen"
-description              : "Just some random notes of random things I am working on/studying"
+description              : "Just some random notes of random things I am working on/studying. A stream of consciousness if you will."
 url                      : https://ftclausen.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : ftclausen/ftclausen.github.io
@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Friedrich \"Fred\" Clausen"
   avatar           : "images/me_cropped.jpg"
-  bio              : "I am a build and infra automation engineer working to become a better all-round developer. This blog is a record of my travels in both the development, infrastructure, and computer science mathematics space."
+  bio              : "I am a build and infra automation engineer working to become a better all-round developer. This blog is a record of my travels in both the development, infrastructure, and computer science mathematics space. The info on this blog may be correct or it may not; happy to get feedback either way."
   location         : "Sydney, Australia"
   email            : "ftclausen@gmail.com"
   links:
@@ -113,7 +113,9 @@ author:
       url: "https://stackoverflow.com/users/1300307/fred-clausen"
     - label: "Serverfault"
       icon: "fas fa-server"
-      url: "https://serverfault.com/users/127243/fred-clausen"
+    - label: "Mathematics"
+      icon: "fa-brands fa-stack-exchange"
+      url: "https://math.stackexchange.com/users/109665/fred-clausen"
     - label: "LinkedIn"
       icon: "fab fa-linkedin-in"
       url: "https://www.linkedin.com/in/friedrichclausen"

@@ -1,5 +1,5 @@
 ---
-title: "Josephus Problem - Recurrence - Revisited"
+title: "Josephus Problem - Recurrence - Revisited - Unrolled"
 date: 2022-02-12 14:09
 classes: wide
 use_math: true
@@ -10,12 +10,12 @@ I am restarting Concrete Mathematics (Graham, Knuth, Patashnik) due to a forced
 break due to a neurological problem called [Anti-NMDA receptor
 encephalitis](https://en.wikipedia.org/wiki/Anti-NMDA_receptor_encephalitis). I
 include this detail because it is a relatively newly discovered disease and
-misdiagnosis is common.
-
+misdiagnosis is common so, in a very small way, raising awareness.
 
 Maths is my friend in the recovery process even though it is challenging. Perhaps because it is challenging.
 
-This post goes over the _recurrence only_ because I found that challenging.
+This post goes over the _recurrence only_ because I found that challenging. For
+some reason I find recursion harder than it should be 😅
 
 # Setting the Scene with Some Examples
 
@@ -92,6 +92,9 @@ The [post](https://math.stackexchange.com/a/4069794/109665) by Brian M. Scott
 shows the case for $n = 21$ but I found it useful to step through the small
 cases as well. 
 
+Formatting note: I am using a comma followed by some notes. The font for the
+`\text{...}` is not beautiful but serves the purpose.
+
 ###  n = 1
 
 This is the base case so $J(1) = 1$
@@ -100,9 +103,9 @@ This is the base case so $J(1) = 1$
 
 $$
 \begin{align}
-J(2) &= $(1\cdot2) \ \ \ \ \ \ \ \mathrm{expand} \\
-     &= 2J(1) - 1 \ \ \ \text{recurse} \\
-     &= 2\cdot1 - 1 = 1 \ \ \text{base case and finish}
+J(2) &= J(1\cdot2), \quad \text{expand} \\
+     &= 2J(1) - 1, \quad \text{recurse} \\
+     &= 2\cdot1 - 1 = 1, \quad \text{base case and finish}
 \end{align}
 $$
 
@@ -110,9 +113,9 @@ $$
 
 $$
 \begin{align}
-J(3) &= J(1\cdot2 + 1)\ \ \ \ \ \ \ \ \text{expand} \\
-     &= 2J(1) + 1 \ \ \ \ \ \text{recurse}\\
-     &= 2\cdot1 + 1 = 1 \ \ \ \ \text{base case and finish}\\
+J(3) &= J(1\cdot2 + 1), \quad \text{expand} \\
+     &= 2J(1) + 1, \quad \text{recurse}\\
+     &= 2\cdot1 + 1 = 1, \quad \text{base case and finish}\\
 \end{align}
 $$
 
@@ -120,12 +123,12 @@ $$
 
 $$
 \begin{align}
-J(4) &= J(2\cdot2) \ \ \ \ \ \ \ \ \text{expand}\\
-     &= 2J(2) - 1 \ \ \ \ \text{recurse} \\
-     &= 2J(1\cdot2) - 1 \ \ \ \ \ \ \text{expand} \\
-     &= 2(2J(1) - 1) - 1 \ \ \ \ \ \ \text{recurse} \\
-     &= 4J(1) - 3 \ \ \ \ \ \ \ \text{simplify}\\ 
-     &= 4\cdot1 - 3 = 1 \ \ \ \ \ \ \text{base case and finish} 
+J(4) &= J(2\cdot2), \quad \text{expand}\\
+     &= 2J(2) - 1, \quad \text{recurse} \\
+     &= 2J(1\cdot2) - 1, \quad \text{expand} \\
+     &= 2(2J(1) - 1) - 1, \quad \text{recurse} \\
+     &= 4J(1) - 3, \quad \text{simplify}\\ 
+     &= 4\cdot1 - 3 = 1, \quad \text{base case and finish} 
 \end{align}
 $$
 
@@ -141,3 +144,21 @@ J(5) &= J(2\cdot2 + 1), \quad \text{expand} \\
      &= 4\cdot1 - 1 = 3, \quad \text{base case and finish}
 \end{align}
 $$
+
+### n = 6
+
+$$
+\begin{align}
+J(6) &= J(2\cdot3), \quad \text{expand} \\
+     &= 2J(3) - 1, \quad \text{recurse} \\
+     &= 2J(1\cdot3) - 1, \quad \text{expand} \\
+     &= 2(2J(1) + 1) - 1, \quad \text{recurse} \\
+     &= 2(2\cdot1 + 1) - 1 = 4 + 2 - 1 = 5, \quad \text{base case and finish}
+\end{align}
+$$
+
+# Conclusion
+
+Doing this manual unrolling really helps understand the nature of the problem
+when expressed in math notation. We can see how powers of two play a role which
+is useful in the closed for solution(s).

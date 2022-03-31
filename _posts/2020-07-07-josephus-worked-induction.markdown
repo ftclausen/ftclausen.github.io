@@ -68,16 +68,24 @@ And odd recurrence
 
 $$ J(2n+1) = 2J(n) + 1, \ \ \ \ \text{for n} \geq 1\\ $$
 
-As with even our closed form is such that $2J(n)+1 = 2\ell+1$ except we are adding one and we also have to make sure that
-the $\ell$ is odd. So the "conversion process" is as follows; end result highlighted in blue
-
-Starting point:
+The same closed form applies to the odd as to the even cases (LHS is recurrence, RHS is closed form "solution") 
 
 $$
-2n+1 = 2^m+\ell = 2\ell+1
+2J(n)+1 = 2\ell+1
 $$
 
-First divide by two:
+For the recurrence we are adding one and we also have to make sure that the $\ell$ is odd. So the recurrence "conversion
+process" from $J(2n + 1)$ (recurrence LHS) to $J(n)$ (in recurrence RHS) is as follows; end result highlighted in blue
+
+Starting point with "argument to recurrence" (LHS on recurrence and LHS on closed form) convert to closed form:
+
+$$
+2n+1 = 2^m+\ell
+$$
+
+which equals our closed form solution (closed form RHS) of $2\ell + 1$. So, to make all the equivalences complete: $2n+1 = 2^m+\ell = 2\ell + 1$
+
+With the above rambling out of the way (not sure if it makes any sense) we then "convert" "2n + 1" to "n". First divide by two:
 
 $$
 n+1 = 2^{m-1}+\ell/2 = \frac{2(\ell+1)}{2}

@@ -55,57 +55,43 @@ Completing the even induction.
 # Odd Induction
 
 Credit: I was stuck on this until helped out by the ever helpful Brian M. Scott on [Math
-Stackexchange](https://math.stackexchange.com/a/3743359/109665).
+Stackexchange](https://math.stackexchange.com/a/3743359/109665). I will repeat
+that here and then do my own (simplified) take on thereafter. First Brian's
+reply:
 
-The book leaves the odd induction as an exercise to the reader so this reader thought to undertake it. As a reminder
-have the closed form
+> Your're not applying the recurrence for the odd case correctly. Suppose that
+$2n + 1 = 2^m + \ell$, where $0 \leq \ell \leq 2^m$. The recurrence is $J(2n +
+1) = 2J(n) + 1$, and _n_ here is $\frac12(2^m + \ell - 1)$, so
+>
+$$
+\begin{align}
+J(2^m + \ell) &= 2\left(2^{m-1} + \frac{\ell - 1}{2}\right) + 1 \\
+              &= 2\left(\frac{2(\ell - 1)}{2} + 1 \right) + 1 \\
+              &= 2\ell + 1
+\end{align}
+$$
+>
+> as desired
+
+I will do some colour highlighting and ever more verbose explanation for my
+future self here. The core is we want to convert $2n + 1$ into $n$ hence
+dividing by two and subtracting one:
 
 $$
-J(2^m+\ell)=2\ell+1
+\frac{2(n + 1)}{2} - 1 = n
 $$
 
-And odd recurrence
-
-$$ J(2n+1) = 2J(n) + 1, \ \ \ \ \text{for n} \geq 1\\ $$
-
-The same closed form applies to the odd as to the even cases (LHS is recurrence, RHS is closed form "solution") 
-
-$$
-2J(n)+1 = 2\ell+1
-$$
-
-For the recurrence we are adding one and we also have to make sure that the $\ell$ is odd. So the recurrence "conversion
-process" from $J(2n + 1)$ (recurrence LHS) to $J(n)$ (in recurrence RHS) is as follows; end result highlighted in blue
-
-Starting point with "argument to recurrence" (LHS on recurrence and LHS on closed form) convert to closed form:
+We apply these operations during the induction step to turn $2\ell + 1$ into
+$\frac{2(\ell +1)}{2} - 1$. Notice the division by two and subtraction by one?
+And now with gusto and in context of the induction step where we "insert" the
+closed form representing _n_ into the recurrence "framework" (substitution
+highlighted in blue):
 
 $$
-2n+1 = 2^m+\ell
-$$
-
-which equals our closed form solution (closed form RHS) of $2\ell + 1$. So, to make all the equivalences complete: $2n+1 = 2^m+\ell = 2\ell + 1$
-
-With the above rambling out of the way (not sure if it makes any sense) we then "convert" "2n + 1" to "n". First divide by two:
-
-$$
-n+1 = 2^{m-1}+\ell/2 = \frac{2(\ell+1)}{2}
-$$
-
-Then subtract one:
-
-$$
-n = 2^{m-1}+\frac{\ell-1}{2} = \color{blue}{\frac{2(\ell-1)}{2} + 1 }
-$$
-
-We can then substitute in our "n"-ified closed form equivalent into the recurrence (replace the $J()$ recurrent call) to
-do the induction; highlighted in blue
-
-$$
-\begin{align*}
-J(2^m+\ell)&=2J\left(2^{m-1}+\frac{\ell-1}2\right)+1\\
-&=2\left(\color{blue}{\frac{2(\ell-1)}2+1}\color{#3d4144}\right)+1\\
-&=2\ell+1\;,
-\end{align*}
+\begin{align}
+J(2^m  + \ell) &= 2\left(\color{blue}\frac{2(\ell + 1)}{2} - 1\color{#3d4144}\right) + 1 \\
+               &= 2\ell + 1
+\end{align}
 $$
 
 Giving us what we want.

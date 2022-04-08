@@ -1,6 +1,6 @@
 ---
 title: "Concrete Mathematics: My Notes on Josephus Problem Induction"
-date: 2022-04-08 15:00
+date: 2022-04-08 12:00
 classes: wide
 categories: mathematics concrete-mathematics
 use_math: true

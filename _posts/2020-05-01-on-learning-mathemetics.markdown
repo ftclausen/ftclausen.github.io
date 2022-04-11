@@ -5,6 +5,9 @@ classes: wide
 categories: mathematics
 ---
 
+> People can be skilled in the applied arts while being ignorant in the science on which those arts are built
+-- M. Rouse Ball
+
 In my shouting to the void on this blog I've mainly been writing about infra, development, and the intersection of the
 two. However, for the last year, I've been bootstrapping my Mathematical knowledge for reading [Concrete
 Mathematics](https://www.pearson.com.au/9780201558029); learning about topics as I encounter them to fully understand

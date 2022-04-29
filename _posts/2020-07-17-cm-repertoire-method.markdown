@@ -92,7 +92,7 @@ unknowns or find equivalences to something known.
 Aside: How exactly the authors arrived at this application of the repertoire method is not explained; probably through
 experience and intuition. Truly something worthwhile to develop in myself.
 
-# Repertoire Item 1: Found by setting $\alpha=1, \beta=0, \alpha=0$
+# Repertoire Item 1 ($A(n)$): Found by setting $\alpha=1, \beta=0, \alpha=0$
 
 Setting $\beta$ and $\gamma$ to above special case values will eliminate them leaving behind just the $A(n)$
 recurrences without the addition of the constants. Thus setting $\alpha = 1$, $\beta = 0$, and $\gamma = 0$ we will get
@@ -136,9 +136,9 @@ $$
 Note: $n$ can also be expressed as $2^m+\ell$ as above. It's still $n$ just decomposed (and, _I think_, in this
 special case repertoire item $\ell$ is always $0$).
 
-# Repertoire Item 2: Found by setting constant function $f(n)=1$
+# Repertoire Item 2: constant function $f(n)=1$
 
-Setting $f(n)=1$ allows us to arrange the whole proposed closed form equal to something; this becomes important later on
+Setting $f(n)=1$ allows us to arrange the whole function equal to something; this becomes important later on
 when we're solving for the various values of $A(n)$, $B(n)$, $C(n)$. The book describes it as
 
 > Next, let's use recurrence (1.11) and solution (1.13) _in reverse_, by starting with a simple function $f(n)$ and
@@ -212,14 +212,16 @@ $$
 
 We can now set about solving for each of the hitherto mysterious $B(n)$ and $C(n)$ functions.
 
-## Find $C(n)
+## Find $C(n)$
 
 Starting with $C(n)$
 
 $$
-A(n) + C(n) = n \\
-C(n) = n - A(n) \\
-C(n) = \ell \\
+\begin{align}
+A(n) + C(n) &= n \\
+C(n) &= n - A(n) \\
+C(n) &= \ell \\
+\end{align}
 $$
 
 Wait, what, $C(n) = \ell$? That's because of the following:
@@ -235,8 +237,7 @@ C(n) = n - A(n) = 2^m + \ell - 2^m = \ell \\
 C(n) = \ell
 $$
 
-Nice.
-
+Another way to look at it is that $n -2^m$ is just going to give what is "left over" after the power of two thus $\ell$
 ## Find B(n)
 
 Now that we have $C(n)$ we can line everything up to find $B(n)$

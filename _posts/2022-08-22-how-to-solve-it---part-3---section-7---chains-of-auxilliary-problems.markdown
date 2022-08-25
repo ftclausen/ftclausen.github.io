@@ -61,7 +61,7 @@ baffled at this stage but at least it could see the manipulation easily enough:
 
 $$
 \begin{align}
-(2x^2)^2 - 2(2x^2)13 + 144 + 25 &= 0 + 25
+(2x^2)^2 - 2(2x^2)13 + 144 + 25 &= 0 + 25 \\
 (2x^2)^2 - 2(2x^2)13 + 169 &= 25
 \end{align}
 $$

@@ -7,7 +7,7 @@ categories: mathematics
 ---
 
 This is from  George Pólya's ["How to Solve
-It"](https://www.amazon.com.au/How-Solve-Aspect-Mathematical-Method/dp/069111966X) book. I am reading this because I
+It"](https://amzn.to/3S8cHr3) book. I am reading this because I
 want to sharpen my problem solving skills and, eventually, be able to make derivations like this in Concrete
 Mathematics.
 

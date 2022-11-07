@@ -52,8 +52,8 @@ simply pretend both conditions _are_ true even though we suspect they are not.
 
 Some ideas:
 
-- There are ten figurs, 0 to 9, and each one must appear at least once
-- The sum of simply those figured is $0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9$ is $45$
+- There are ten figures, 0 to 9, and each one must appear at least once
+- The sum of just those figures is $0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9$ is $45$
 
 Now comes the bit I found confusing:
 

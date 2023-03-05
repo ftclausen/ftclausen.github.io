@@ -82,14 +82,14 @@ $$
 $$
 
 We apply these operations during the induction step to turn $2\ell + 1$ into
-$\frac{2(\ell +1)}{2} - 1$. Notice the division by two and subtraction by one?
+$\frac{2(\ell -1)}{2} + 1$. Notice the division by two and subtraction by one?
 And now with gusto and in context of the induction step where we "insert" the
 closed form representing _n_ into the recurrence "framework" (substitution
 highlighted in blue):
 
 $$
 \begin{align}
-J(2^m  + \ell) &= 2\left(\color{blue}\frac{2(\ell + 1)}{2} - 1\color{#3d4144}\right) + 1 \\
+J(2^m  + \ell) &= 2\left(\color{blue}\frac{2(\ell - 1)}{2} + 1\color{#3d4144}\right) + 1 \\
                &= 2\ell + 1
 \end{align}
 $$

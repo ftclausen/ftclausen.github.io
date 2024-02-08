@@ -69,8 +69,6 @@ yandex_site_verification :
 naver_site_verification  :
 
 # Social Sharing
-twitter:
-  username               : ftclausen
 facebook:
   username               :
   app_id                 :
@@ -96,7 +94,7 @@ author:
   name             : "Friedrich \"Fred\" Clausen"
   avatar           : "images/me_cropped.jpg"
   bio              : "I am a build and infra automation engineer working to become a better all-round developer. This blog is a record of my travels in both the development, infrastructure, and computer science mathematics space. The info on this blog may be correct or it may not; happy to get feedback either way."
-  location         : "Sydney, Australia"
+  location         : "Murwillumbah, Australia"
   email            : "ftclausen@gmail.com"
   links:
     - label: "Email"

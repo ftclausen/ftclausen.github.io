@@ -35,7 +35,7 @@ The first step is setting up [direnv](https://github.com/direnv/direnv) as descr
 Then I created a script to update the Homebrew root certificate store with the ZScaler root CA cert:
 
 ```shell
-# ~/etc/ca_bundle
+# ~/bin/ca_bundle
 # This file is to be sourced, not run directly.
 prefix="/usr/local/Cellar/ca-certificates"
 latest="$(ls -1tr /usr/local/Cellar/ca-certificates)"

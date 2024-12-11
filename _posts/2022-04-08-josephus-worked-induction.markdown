@@ -65,7 +65,7 @@ $2n + 1 = 2^m + \ell$, where $0 \leq \ell \leq 2^m$. The recurrence is $J(2n +
 >
 $$
 \begin{align}
-J(2^m + \ell) &= 2\left(2^{m-1} + \frac{\ell - 1}{2}\right) + 1 \\
+J(2^m + \ell) &= 2J\left(2^{m-1} + \frac{\ell - 1}{2}\right) + 1 \\
               &= 2\left(\frac{2(\ell - 1)}{2} + 1 \right) + 1 \\
               &= 2\ell + 1
 \end{align}

@@ -35,7 +35,7 @@ as an exercise to try and work it out yourself. Another one is:
 
 Here is this relationship of `large` vs `xlarge` in a diagram:
 
-![cache-r7g-large-units](/images/cache-r7g-norm-factor.png | width=500)
+![cache-r7g-large-units](/images/cache-r7g-norm-factor.png)
 
 ## References
 

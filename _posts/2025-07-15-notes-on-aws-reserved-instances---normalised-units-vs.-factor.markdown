@@ -42,4 +42,4 @@ Here is this relationship of `large` vs `xlarge` in a diagram:
 
 - [Instance Size
 Flexibility](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/apply_ri.html#ri-instance-size-flexibility) - See
-normalisation factor table and diagrams that follow.
+normalisation factor table and diagrams that follow

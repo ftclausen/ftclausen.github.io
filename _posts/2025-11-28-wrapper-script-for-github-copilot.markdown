@@ -15,6 +15,8 @@ The script looks like:
 
 ```shell
 #!/usr/bin/env bash
+# Note: This script assumes you already have Nodejs installed via NVM.
+#       Easy enough to adjust if this is not the case for you.
 
 if [[ -z $NVM_DIR ]]; then
   NVM_DIR="$HOME/.nvm"

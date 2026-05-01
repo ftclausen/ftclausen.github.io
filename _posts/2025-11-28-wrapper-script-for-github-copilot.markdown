@@ -6,6 +6,13 @@ use_math: true
 categories:
 ---
 
+# Update
+
+GitHub Copilot does now have global config for allowable tools. Original post
+follows.
+
+# Original Post
+
 It would seem GitHub Copilot does not have a global configuration option to persist allowed tools. I often want to run
 something like `kubectl` or `jq` with Copilot and having to specify it on the command-line each time is tedious. Note,
 if you are reading this a while after I wrote this post then it may well support this properly. What I did was create a
